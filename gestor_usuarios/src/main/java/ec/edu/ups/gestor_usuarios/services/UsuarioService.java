@@ -66,8 +66,7 @@ public class UsuarioService {
 		return false;
 	}
 
-	public Usuario obtenerUsuario(String identificacion) throws Exception {
-		Usuario usuario = new Usuario();
+	public Usuario obtenerUsuario(String identificacion) throws Exception {		
 		Optional<Usuario> usuarioExiste = usuarioRepository.findByIdentificacion(identificacion);
 		if(!usuarioExiste.isPresent()) {
 			throw new Exception("Usuario con identificación " + identificacion + " no encontrado.");					
