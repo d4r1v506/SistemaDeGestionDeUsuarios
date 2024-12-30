@@ -12,7 +12,7 @@
 	<groupId>ec.edu.ups</groupId>
 	<artifactId>gestor_usuarios</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>gestor_usuarios</name>
 	<description>Sistema de Gestión de Usuarios</description>
 	<url />
@@ -67,11 +67,7 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -88,6 +84,7 @@
 	</dependencies>
 
 	<build>
+	<finalName>gestor_usuarios</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

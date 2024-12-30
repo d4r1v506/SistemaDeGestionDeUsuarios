@@ -1,7 +1,5 @@
 package ec.edu.ups.gestor_usuarios.controllers;
 
-import java.util.Optional;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
