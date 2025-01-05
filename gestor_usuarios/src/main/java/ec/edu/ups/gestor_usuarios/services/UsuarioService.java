@@ -59,7 +59,7 @@ public class UsuarioService {
 
 	public boolean borrarUsuario(String identificacion) {
 		Optional<Usuario> usuarioExiste = usuarioRepository.findByIdentificacion(identificacion);
-		if(!usuarioExiste.isPresent()) {
+		if(usuarioExiste.isPresent()) {
 			usuarioRepository.delete(usuarioExiste.get());
 			return true;
 		}

@@ -45,7 +45,7 @@ public class UsuarioController {
 			usuario.setEdad(usuarioDTO.getEdad());
 			Usuario usuarioCreado = usuarioService.crearUsuario(usuario, usuarioDTO.getEstado());
 			RespuestaGenericaServicio respuesta = new RespuestaGenericaServicio("SUCCESS", usuarioCreado,
-					new String[] { "Tarea creada exitosamente" });
+					new String[] { "Usuario creado exitosamente" });
 			return ResponseEntity.status(HttpStatus.CREATED).body(respuesta);
 		}catch (IllegalArgumentException e) {
 			RespuestaGenericaServicio respuesta = new RespuestaGenericaServicio("ERROR", null,
